@@ -82,6 +82,7 @@ class Example extends StatelessWidget {
 
                 elevation: 2,
                 title: 'Click Me',
+                textStyle: TextStyle(),
 
 
               )

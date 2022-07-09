@@ -9,12 +9,15 @@ class Button extends StatelessWidget {
   final double? buttonWidth;
   final double? elevation;
   final BorderSide? side;
+  final TextStyle? textStyle;
 
   final double? borderRadius;
   final Color? buttonColor;
   final Function? callBack;
+
   const Button(
       {this.elevation,
+        this.textStyle,
         this.side,
         this.title,
         this.buttonHeight,
@@ -43,7 +46,7 @@ class Button extends StatelessWidget {
             callBack!();
           }
         },
-        child: Text(title!),
+        child: Text(title!,style: textStyle,),
       ),
     );
   }
